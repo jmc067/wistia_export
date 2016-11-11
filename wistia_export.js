@@ -42,11 +42,11 @@ $(function() {
         return str;
     }		
 
-    function appendCSVDownloadButton(csv){
+    function appendCSVDownloadButton(csv,fileName){
 
 		var fileName = "events_export.csv"       	
 		a=document.createElement('a');
-		a.textContent='download';
+		a.textContent=fileName;
 		a.download=fileName;
 		a.href='data:text/csv;charset=utf-8,'+escape(csv);
 		document.getElementById("action_buttons").appendChild(a);									
