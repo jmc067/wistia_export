@@ -43,8 +43,6 @@ $(function() {
     }		
 
     function appendCSVDownloadButton(csv,fileName){
-
-		var fileName = "events_export.csv"       	
 		a=document.createElement('a');
 		a.textContent=fileName;
 		a.download=fileName;
