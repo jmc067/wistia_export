@@ -10,12 +10,12 @@ $(function() {
 	var eventDates = {};  // used to check duplicate events
 	var page = 1;
 	var MILLISECONDS_IN_A_MINUTE = 1000;
-	var WAIT_TIME = MILLISECONDS_IN_A_MINUTE*NUM_SECONDS_TO_WAIT;
 
 	// SETTINGS	
 	var api_key = "7ea1206fc22043174d677592dad08c53488821253376ef1adad77c75a9b586e1";
 	var NUM_SECONDS_TO_WAIT = 70;         // how long to wait before the next request
-	var NUM_REQUESTS_BEFORE_WAITING = 90; // rate allows for 100 but let's be safe so the account doesn't get blocked
+	var WAIT_TIME = MILLISECONDS_IN_A_MINUTE*NUM_SECONDS_TO_WAIT;
+	var NUM_REQUESTS_BEFORE_WAITING = 2; // rate allows for 100 but let's be safe so the account doesn't get blocked
 	var NUM_REQUESTS_BEFORE_EXPORT = 20;  // this allows for 100 * 20 rows of events per file.  Let's keep it small so the network doesn't error out on download
 
 
