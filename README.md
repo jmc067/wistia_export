@@ -1,6 +1,11 @@
 # Wistia Export
 Exports all videos with associated metadata
 
+## How to use
+1.  open `index.html` file in browser
+2.  select "Trigger Export"
+
+
 ## Process
 1.  Get list of all visitors.  Store in memory hash
 	- need visitor-key
